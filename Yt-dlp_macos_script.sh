@@ -9,7 +9,7 @@ until [ $Reslt = '1' ]; do
  read Reslt
  if [ $Reslt != '1' ]
  then
-  $PathToYtDlp -x --audio-format mp3 -o $Output $Reslt
+  $PathToYtDlp -f "bestvideo+bestaudio/best/best" --merge-output-format mp4 -o $Output $Reslt
  fi
 done
 exit 0
